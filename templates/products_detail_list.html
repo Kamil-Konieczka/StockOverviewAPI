@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ FinalProductNumber.name}}</h2>
+
+
+    <ol>
+        {% for singlenumber in singlenumbers %}
+            <li>{{ singlenumber.name }} - {{ singlenumber.tool_maker }} - {{ singlenumber.stock }} - {{ singlenumber.gs }}</li>
+        {% endfor %}
+    </ol>
+
+{% endblock %}
+
+

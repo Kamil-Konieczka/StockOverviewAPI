@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Chose customer:</h2>
+    <ul>
+        {% for customer in customers %}
+            <li><a href="/customer/{{ customer.id }}">{{ customer.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+deactivate
+
+
+
+
+{##}
+{##}
+
+{##}
+{#    <ul>#}
+{#        {% for product in products %}#}
+{#            <li>{{ product.name }}</li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+{##}
+{#    <ul>#}
+{#        {% for single_product in single_products %}#}
+{#            <li>{{ single_product.name }}</li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+{##}
+{##}
+{##}
+{##}
+{##}
